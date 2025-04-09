@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Downloading...</title>
+</head>
+<body>
+  <script>
+    window.onload = function() {
+      const a = document.createElement('a');
+      a.href = 'file_00000000167c620ab4dd347180585f31_conversation_id=67f57f32-b7f4-8001-8869-67b405b18c60&message_id=f610f6a5-3d80-4286-9187-cb60a805d2a0.png';  // Replace with your file name
+      a.download = 'myfile.zip';
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+  </script>
+  <p>If the download doesn't start, <a href="myfile.zip" download>click here</a>.</p>
+</body>
+</html>
